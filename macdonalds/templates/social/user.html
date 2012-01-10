@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>user</title>
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="Peter Ma">
+	<!-- Date: 2012-01-05 -->
+</head>
+<body>
+<form action="/social/update" method="post" accept-charset="utf-8">
+	{% csrf_token %}
+	<p><input type="text" value="{{ user.screen_name }}" name="username"></p>
+	<p><input type="text" value="password" name="password1"></p>	
+	<p><input type="text" value="password" name="password2"></p>		
+	<p><input type="submit" value="Continue &rarr;"></p>
+</form>
+</body>
+</html>

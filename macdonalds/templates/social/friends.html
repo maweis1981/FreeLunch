@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>user</title>
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="Peter Ma">
+	<!-- Date: 2012-01-05 -->
+</head>
+<body>
+<p>	Total Number : {{ friends.total_number }} </p>
+
+<form>
+ <p><label>Choose Your Friends:</label></p>
+ <fieldset>
+  <legend> friends list </legend>
+{% for friend in friends.users %}
+  <p><label> <input type=checkbox> <img src="{{ friend.profile_image_url }}">{{ friend.screen_name }} {{ friend.status.text }}</label></p>
+{% endfor %}
+
+ </fieldset>
+</form>
+
+
+
+<p>
+<a href="/social/update">Update.</a>
+</p>
+</body>
+</html>
