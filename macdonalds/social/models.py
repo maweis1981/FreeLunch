@@ -13,11 +13,11 @@ class WeiboAccessToken(models.Model):
         return '%s,%s' % (self.user.username,self.screen_name)
         
 class InviteCode(models.Model):
-    master = models.ForeignKey(User)
+    main = models.ForeignKey(User)
     invite_code = models.CharField(max_length=256)
     create_date = models.DateTimeField(auto_now_add=True)
     
 class Relatives(models.Model):
     r_user = models.ForeignKey(User,related_name='r_relative_users_set')
-    r_master = models.ForeignKey(User,related_name='r_relative_master_set')
+    r_main = models.ForeignKey(User,related_name='r_relative_main_set')
     create_date = models.DateTimeField(auto_now_add=True)    

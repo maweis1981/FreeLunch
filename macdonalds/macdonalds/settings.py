@@ -137,7 +137,7 @@ INSTALLED_APPS = (
     'social',
     'accounts',
     'tasks',
-    # 'slaves',
+    # 'subordinates',
 )
 
 AUTH_PROFILE_MODULE = "accounts.UserProfile"
