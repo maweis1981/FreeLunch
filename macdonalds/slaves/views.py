@@ -23,63 +23,63 @@ from django.contrib.auth.models import User
 from django.core.cache import cache
 
 def index(request):
-    return render_to_response('slaves/index.html', locals())
+    return render_to_response('subordinates/index.html', locals())
     
-def slaves(request):
-    return render_to_response('slaves/slave_list.html', locals())
+def subordinates(request):
+    return render_to_response('subordinates/subordinate_list.html', locals())
 
-def mySlaves(request):
-    return render_to_response('slaves/mySlaves.html',locals())
+def mySubordinates(request):
+    return render_to_response('subordinates/mySubordinates.html',locals())
     
-def myMaster(request):
-    return render_to_response('slaves/myMaster.html',locals())
+def myMain(request):
+    return render_to_response('subordinates/myMain.html',locals())
     
-def buySlave(request):
-    return render_to_response('slaves/buySlave.html', locals())
+def buySubordinate(request):
+    return render_to_response('subordinates/buySubordinate.html', locals())
 
-def slaveActions(request):
-    return render_to_response('slaves/buySlave.html', locals())
+def subordinateActions(request):
+    return render_to_response('subordinates/buySubordinate.html', locals())
     
-def slaveTrades(request):
-    return render_to_response('slaves/buySlave.html', locals())
+def subordinateTrades(request):
+    return render_to_response('subordinates/buySubordinate.html', locals())
 
 def         
     
     # 奴隶逃跑    
-def slaveRun(request):
-    return render_to_response('slaves/run.html',locals())
+def subordinateRun(request):
+    return render_to_response('subordinates/run.html',locals())
     
     # 折磨
-def slaveAdventure(request):
-    return render_to_response('slaves/adventure.html',locals())
+def subordinateAdventure(request):
+    return render_to_response('subordinates/adventure.html',locals())
     
     # 释放
-def letSlaveGo(request):
-    return render_to_response('slaves/buySlave.html', locals())
+def letSubordinateGo(request):
+    return render_to_response('subordinates/buySubordinate.html', locals())
 
     # 更换形象
 def changeAvatar(request):
-    return render_to_response('slaves/buySlave.html', locals())    
+    return render_to_response('subordinates/buySubordinate.html', locals())    
 
     # 私信
 def message(request):
-    return render_to_response('slaves/buySlave.html', locals())    
+    return render_to_response('subordinates/buySubordinate.html', locals())    
     
     # 看他
 def profile(request):
-    return render_to_response('slaves/buySlave.html', locals())    
+    return render_to_response('subordinates/buySubordinate.html', locals())    
 
     # 讨好
 def flattering(request):
-    return render_to_response('slaves/flattering.html',locals())
+    return render_to_response('subordinates/flattering.html',locals())
 
     # 赎身
 def freedom(request):
-    return render_to_response('slaves/freedom.html',locals())
+    return render_to_response('subordinates/freedom.html',locals())
 
     # 奴隶竞技
-def slaveAmphitheater(request):
-    return render_to_response('slaves/amphitheater.html',locals())
+def subordinateAmphitheater(request):
+    return render_to_response('subordinates/amphitheater.html',locals())
 
 
 
